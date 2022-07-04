@@ -82,10 +82,11 @@
      (tree-sitter-hl-face:type             (:foreground rhjr-yellow-0))   
      (tree-sitter-hl-face:type.builtin     (:foreground rhjr-red-0))   
 
+     (tree-sitter-hl-face:constant           (:foreground rhjr-purple-0))   
      (tree-sitter-hl-face:variable           (:foreground rhjr-foreground-0))   
      (tree-sitter-hl-face:variable.builtin   (:foreground rhjr-red-0))   
      (tree-sitter-hl-face:variable.parameter (:foreground rhjr-blue-0))   
-     (tree-sitter-hl-face:constant           (:foreground rhjr-purple-0))   
+     (tree-sitter-hl-face:variable.special   (:foreground rhjr-orange-0))   
 
      (tree-sitter-hl-face:property.definition (:foreground rhjr-blue-0 :italic -1))   
 
@@ -127,6 +128,9 @@
 
      ;; magit   
      (magit-diff-whitespace-warning (:background rhjr-red-0))   
+
+     ;; flycheck
+     (ccls-skipped-range-face (:foreground rhjr-grey-0))   
 
      ))
 (provide-theme 'gruverboxer)    
