@@ -1,6 +1,6 @@
 # The "GruverBoxer" theme
 
-![Gruverboxer](./images/gruverboxer-theme-first-version.png)
+![Gruverboxer](./images/gruverboxer-theme-version-1.png)
 
 Is [emacs-theme-gruvbox](https://github.com/greduan/emacs-theme-gruvbox) and
 [suscolors](https://github.com/TheSuspiciousWombat/suscolors-emacs) not enough
