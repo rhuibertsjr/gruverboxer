@@ -134,7 +134,8 @@
      (isearch-fail         (:background rhjr-red))
      (match                (:background rhjr-yellow))
 
-     ;; magit   
+     ;; magit
+     (git-commit-summary            (:foreground rhjr-foreground))   
      (magit-diff-whitespace-warning (:background rhjr-red))   
 
      ;; flycheck
