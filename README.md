@@ -1,6 +1,7 @@
+# The "GruverBoxer" theme
+
 ![Gruverboxer](./images/gruverboxer-theme-first-version.png)
 
-# The "GruverBoxer" theme
 Is [emacs-theme-gruvbox](https://github.com/greduan/emacs-theme-gruvbox) and
 [suscolors](https://github.com/TheSuspiciousWombat/suscolors-emacs) not enough
 gruvbox for you? Then I present you an even more gruv'ier and box'ier gruvbox
