@@ -11,7 +11,7 @@
 
     ((((class color) (min-colors #xFFFFFF))) ;; Graphical emacs
 
-        (rhjr-background   "#32302f")
+        (rhjr-background   "#282828")
         (rhjr-background-1 "#3c3836")
         (rhjr-background-2 "#504945")
         (rhjr-foreground   "#fbf1c7")
@@ -25,6 +25,8 @@
         (rhjr-yellow "#fabd2f")
         (rhjr-blue   "#83a598")
         (rhjr-purple "#d3869b")
+
+        (rhjr-aqua   "#8ec07c")
 
         (rhjr-selection        "#504945")
         (rhjr-frame-colour     rhjr-background)
@@ -43,6 +45,8 @@
 
      (highlight (:foreground rhjr-yellow))
 
+     (bold       (:bold t))   
+
      ;; window
      (fringe    (:background rhjr-frame-colour))
      (vertical-border (:foreground rhjr-modeline-colour ))
@@ -59,7 +63,7 @@
      (font-lock-builtin-face       (:foreground rhjr-yellow))
      (font-lock-comment-face       (:foreground rhjr-grey))
      (font-lock-string-face        (:foreground rhjr-green))
-     (font-lock-preprocessor-face  (:foreground rhjr-blue))
+     (font-lock-preprocessor-face  (:foreground rhjr-aqua))
      (font-lock-constant-face      (:foreground rhjr-blue))
      (font-lock-type-face          (:foreground rhjr-red))
      (font-lock-variable-name-face (:foreground rhjr-blue))
@@ -170,7 +174,7 @@
      (org-headline-done (:foreground rhjr-blue))   
 
      (org-link          (:foreground rhjr-purple))   
-     (org-todo          (:foreground rhjr-red))   
+     (org-todo          (:foreground rhjr-red :bold t))   
      (org-done          (:foreground rhjr-green))   
      (org-date          (:foreground rhjr-grey))   
      (org-tag           (:foreground rhjr-yellow))   
@@ -183,6 +187,37 @@
 
      (org-agenda-structure      (:foreground rhjr-purple))   
      (org-agenda-date           (:foreground rhjr-blue))   
+
+     ;; Custom syntax highlight   
+
+     ;; C / C++   
+     (rhuib-gruverboxer:keyword         (:foreground rhjr-red))
+     (rhuib-gruverboxer:variable        (:foreground rhjr-foreground))
+     (rhuib-gruverboxer:constant        (:foreground rhjr-aqua))
+
+     (rhuib-gruverboxer:include         (:foreground rhjr-aqua))
+
+     (rhuib-gruverboxer:function       (:foreground rhjr-green))
+     (rhuib-gruverboxer:function.call  (:foreground rhjr-green))
+     (rhuib-gruverboxer:function.macro (:foreground rhjr-orange))
+     (rhuib-gruverboxer:parameter      (:foreground rhjr-blue))
+
+     (rhuib-gruverboxer:field.enumerate (:foreground rhjr-purple))
+     (rhuib-gruverboxer:field.struct    (:foreground rhjr-blue))
+     (rhuib-gruverboxer:property        (:foreground rhjr-blue))
+
+     (rhuib-gruverboxer:type     (:foreground rhjr-yellow))
+     (rhuib-gruverboxer:number   (:foreground rhjr-purple))
+     (rhuib-gruverboxer:string          (:foreground rhjr-green))
+     (rhuib-gruverboxer:string.escape   (:foreground rhjr-orange))
+     (rhuib-gruverboxer:character       (:foreground rhjr-green))
+     (rhuib-gruverboxer:builtin         (:foreground rhjr-purple))
+
+     (rhuib-gruverboxer:punctuation.delimiter (:foreground rhjr-orange))
+     (rhuib-gruverboxer:punctuation.bracket   (:foreground rhjr-orange))
+     (rhuib-gruverboxer:punctuation.special   (:foreground rhjr-orange))
+     (rhuib-gruverboxer:operator              (:foreground rhjr-foreground))
+     (rhuib-gruverboxer:_parent               (:foreground rhjr-foreground))
         
      ))
 (provide-theme 'gruverboxer)    
