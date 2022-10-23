@@ -51,10 +51,23 @@
      (fringe    (:background rhjr-frame-colour))
      (vertical-border (:foreground rhjr-modeline-colour ))
 
-     (mode-line (:background rhjr-modeline-colour))
-     (mode-line-inactive (:background rhjr-background-1
-                          :foreground rhjr-foreground
-                          :box nil))
+     (mode-line          (:background rhjr-background
+                          :underline rhjr-modeline-colour
+                          :box '(:line-width 15
+                                 :color "#282828"))) 
+     (mode-line-inactive (:background rhjr-background
+                          :underline rhjr-modeline-colour  
+                          :box '(:line-width 15
+                                 :color "#282828"))) 
+
+     (header-line (:background rhjr-modeline-colour 
+                   :box '(:line-width 4 
+                          :color "#282828"))) 
+
+     ;; window divider 
+     (window-divider             (:foreground rhjr-background)) 
+     (window-divider-first-pixel (:foreground rhjr-background)) 
+     (window-divider-last-pixel  (:foreground rhjr-background)) 
 
      (minibuffer-prompt (:foreground rhjr-green ))
 
@@ -166,14 +179,14 @@
      (compilation-info         (:foreground rhjr-blue)) 
         
      ;; org
-     (org-level-1       (:foreground rhjr-purple :bold t))   
-     (org-level-2       (:foreground rhjr-blue))   
-     (org-level-3       (:foreground rhjr-yellow))   
-     (org-level-4       (:foreground rhjr-red))   
+     (org-level-1       (:foreground rhjr-foreground :bold t))   
+     (org-level-2       (:foreground rhjr-foreground :bold t))   
+     (org-level-3       (:foreground rhjr-foreground :bold t))   
+     (org-level-4       (:foreground rhjr-foreground :bold t))   
 
      (org-headline-done (:foreground rhjr-blue))   
 
-     (org-link          (:foreground rhjr-purple))   
+     (org-link          (:foreground rhjr-blue))   
      (org-todo          (:foreground rhjr-red :bold t))   
      (org-done          (:foreground rhjr-green))   
      (org-date          (:foreground rhjr-grey))   
@@ -206,12 +219,12 @@
      (rhuib-gruverboxer:field.struct    (:foreground rhjr-blue))
      (rhuib-gruverboxer:property        (:foreground rhjr-blue))
 
-     (rhuib-gruverboxer:type     (:foreground rhjr-yellow))
-     (rhuib-gruverboxer:number   (:foreground rhjr-purple))
-     (rhuib-gruverboxer:string          (:foreground rhjr-green))
-     (rhuib-gruverboxer:string.escape   (:foreground rhjr-orange))
-     (rhuib-gruverboxer:character       (:foreground rhjr-green))
-     (rhuib-gruverboxer:builtin         (:foreground rhjr-purple))
+     (rhuib-gruverboxer:type          (:foreground rhjr-yellow))
+     (rhuib-gruverboxer:number        (:foreground rhjr-purple))
+     (rhuib-gruverboxer:string        (:foreground rhjr-green))
+     (rhuib-gruverboxer:string.escape (:foreground rhjr-orange))
+     (rhuib-gruverboxer:character     (:foreground rhjr-green))
+     (rhuib-gruverboxer:builtin       (:foreground rhjr-purple))
 
      (rhuib-gruverboxer:punctuation.delimiter (:foreground rhjr-orange))
      (rhuib-gruverboxer:punctuation.bracket   (:foreground rhjr-orange))
